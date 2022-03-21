@@ -20,8 +20,9 @@ export class Tab2Page {
 
   async printCurrentPosition(){
     const coordinates = await Geolocation.getCurrentPosition();
+
+    //il vaut mieux utiliser watchPosition() pour avoir la position de la personne en continue 
   
-    let latitude =coordinates.coords.latitude;
   }
 
 }
