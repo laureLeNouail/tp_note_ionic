@@ -14,4 +14,16 @@
   </ion-header>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
+  <table style="border: 1px solid black;" *ngFor="let cords of cordinates">
+    <tr>
+      <td>Latitude</td>
+      <td>Longitude</td>
+      <td>Date d'enregistrement</td>
+    </tr>
+    <tr>
+      <td>{{coordinates.cords.latitude}}</td>
+      <td>{{coordinates.cords.longitude}}</td>
+      <td>{{date}}</td>
+    </tr>
+  </table>
 </ion-content>
